@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deb Board</title>
+    <title>Dev Board</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>5555</h1>
+<body class="bg-gray-200 p-6">
+     <!-- Header section-->
+   <div class="max-w-7xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <div class="flex  justify-between items-center">
+        <div class="flex">
+            <img src="assets/logo.png" alt="">
+        <h1 class="text-2xl flex items-center " >
+          <span class="">Dev</span>  <span class="font-bold">Board</span>
+        </h1>
+    </div>
+        <div class="flex items-center gap-3 ">
+            <img src="assets/checkbox.png" alt="">
+            <span class="mr-4 text-3xl">  23</span>
+            <img src="assets/theme-btn.png" alt="">
+        </div>
+    </div>
+   </div>
+
+   <!--Main section-->
+   <div class="grid grid-cols-3   ">
+   <div class="max-w-4xl mx-auto  col-span-2 mr-10  ">
+    <div class="mt-6 grid grid-cols-3   gap-4">
+        <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+            <img src="assets/checkbox.png" alt="">
+            <div class="ml-4">
+                <p class="text-gray-700">Task Assigned</p>
+                <p class="text-2xl font-bold">05</p>
+            </div>
+        </div>
+        <div class="bg-blue-500 text-white p-4 rounded-lg flex items-center text-center">
+            
+                <img src="assets/board.png" alt="">
+            <p class="font-bold">Discover Something New Todat!</p>
+        
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg flex items-center text-center">
+            <img src="assets/calender.png" alt="">
+            <div class="ml-4">
+                <p class="text-gray-700">Wed,</p> 
+                <p class="font-bold">Jul 28 2025</p>
+            </div>
+        </div>
+    </div>
+     <!--card-->
+         <div class="mt-6 grid grid-cols-3  gap-5 ">
+              <div class="bg-white p-4 rounded-lg shadow-md border">
+                 <p>ShopEase</p>  
+                 <h2 class="font-bold">Fix Mobile Button Issue</h2>
+                 <p>Debug using Chrome DevTools, check for overlappin</p>
+                 <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+                 <button class="btn btn-primary">Completed</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border">
+                <p>ShopEase</p>  
+               <h2 class="font-bold">Fix Mobile Button Issue</h2>
+               <p>Debug using Chrome DevTools, check for overlappin</p>
+               <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+               <button class="btn btn-primary">Completed</button>
+           </div>
+           <div class="bg-white p-4 rounded-lg shadow-md border">
+               <p>ShopEase</p>  
+              <h2 class="font-bold">Fix Mobile Button Issue</h2>
+               <p>Debug using Chrome DevTools, check for overlappin</p>
+              <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+              <button class="btn btn-primary">Completed</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border">
+                <p>ShopEase</p>  
+               <h2 class="font-bold">Fix Mobile Button Issue</h2>
+                <p>Debug using Chrome DevTools, check for overlappin</p>
+               <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+               <button class="btn btn-primary">Completed</button>
+             </div>
+             <div class="bg-white p-4 rounded-lg shadow-md border">
+                <p>ShopEase</p>  
+               <h2 class="font-bold">Fix Mobile Button Issue</h2>
+                <p>Debug using Chrome DevTools, check for overlappin</p>
+               <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+               <button class="btn btn-primary">Completed</button>
+             </div>
+             <div class="bg-white p-4 rounded-lg shadow-md border">
+                <p>ShopEase</p>  
+               <h2 class="font-bold">Fix Mobile Button Issue</h2>
+                <p>Debug using Chrome DevTools, check for overlappin</p>
+               <p class="text-sm text-gray-700 mt-2">Deadline:<strong>21 March 2025</strong></strong></p>
+               <button class="btn btn-primary">Completed</button>
+             </div>
+         </div>
+     
+     </div>
+<!--Activity Log-->
+ 
+<div class="bg-gray-50  rounded-lg  mt-6 mr-80  ">
+    
+    <div class=" flex justify-center p-5  gap-2">
+            <img src="assets/activity.png" alt="">
+            <h2 class="font-bold mb-2 text-2xl ">Activity Log</h2>
+    </div>
+    <button class="btn btn-primary ml-25  ">Clear History</button>
+ </div>   
+         
+   
+  
+
+</div>
+    
 </body>
 </html>
