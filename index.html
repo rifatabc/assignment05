@@ -20,8 +20,8 @@
     </div>
         <div class="flex items-center gap-3 ">
             <img src="assets/checkbox.png" alt="">
-            <span class="mr-4 text-3xl">  23</span>
-            <img src="assets/theme-btn.png" alt="">
+            <span  class="mr-4 text-3xl font-bold"> <span id="completed">23</span> </span>
+            <img id="color" src="assets/theme-btn.png" alt="">
         </div>
     </div>
    </div>
@@ -31,94 +31,97 @@
    <div class=" mr-10 grid grid-cols-4 gap-5 p-10 ">
     <div class="mt-6 col-span-3  gap-4">
         <div class="flex gap-3">
-        <div class="bg-blue-50 p-4 rounded-lg flex items-center w-60">
+        <div class="bg-gray-100 p-4 rounded-lg flex items-center w-60">
             <img src="assets/checkbox.png" alt="">
-            <div class="ml-4">
+            <div id="" class="ml-4">
                 <p class="text-gray-700">Task Assigned</p>
-                <p class="text-2xl font-bold">05</p>
+                <p class="text-2xl font-bold"> <span id="assigned" >06</span></p>
             </div>
         </div>
-        <div class="bg-blue-500 text-white p-4 rounded-lg flex items-center text-center w-110">
+        <div id="Discover" onclick="showAlerts()" class="bg-blue-500 text-white p-4 rounded-lg flex items-center text-center w-110">
             
                 <img src="assets/board.png" alt="">
             <p class="font-bold">Discover Something New Todat!</p>
         
         </div>
-        <div class="bg-gray-50 p-4 rounded-lg flex items-center text-center w-60">
+        <div class="bg-gray-100 p-4 rounded-lg flex items-center text-center w-60">
             <img src="assets/calender.png" alt="">
-            <div class="ml-4">
-                <p class="text-gray-700">Wed,</p> 
-                <p class="font-bold">Jul 28 2025</p>
+            <div id="date-box" class="ml-4">
+             
+                <p id="currentdate" class="font-bold">Jul 28 2025</p>
             </div>
         </div>
     </div>
         <!--card-->
         <div class=" mt-6 grid grid-cols-3 gap-3 ">
-            <div class="bg-white p-4 rounded-lg shadow-md ">
-               <p class="ml-2">ShopEase</p>  
+            <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+               <p class="ml-2  rounded-lg"> <span class="bg-white rounded-lg"> ShopEase</span></p>  
                <h2 class="font-bold">Fix Mobile Button Issue</h2>
-               <p class="p-2">Debug using Chrome DevTools, check for overlappin</p>
+               <p class="p-2 bg-white rounded-lg">Debug using Chrome DevTools, check for overlappin</p>
                <div class="flex  gap-8 mt-5 ">
                <p class="text-sm text-gray-700 lg-mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-               <button class="btn btn-primary ">Completed</button>
+               <button id="CompletedBtn" onclick="updateTask()" class="btn btn-primary  ">Completed</button>
             </div>
             
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md ">
-              <p class="ml-2">CloudSync</p>  
+          <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+              <p class="ml-2"> <span class="bg-white rounded-lg">CloudSync</span></p>  
              <h2 class="font-bold">Add Dark Mode</h2>
-             <p class="p-2">Store the user's preference in localStorage, update overlappin CSS </p>
+             <p class="p-2  bg-white rounded-lg">Store the user's preference in localStorage, update overlappin CSS </p>
              <div class="flex  gap-8 mt-5 ">
                 <p class="text-sm text-gray-700 mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-                <button class="btn btn-primary ">Completed</button>
+                <button id="CompletedBtn1"  onclick="showAlerts()" class="btn btn-primary  ">Completed</button>
              </div>
          </div>
-         <div class="bg-white p-4 rounded-lg shadow-md ">
-             <p class="ml-2">SwiftPay</p>  
+         <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+             <p class="ml-2"> <span class="bg-white rounded-lg">SwiftPay</span></p>  
             <h2 class="font-bold">Optimize  Home page </h2>
-             <p class="p-2">Debug using Chrome to this Dev Tools,  check for this overlappin css</p>
+             <p class="p-2  bg-white rounded-lg">Debug using Chrome to this Dev Tools,  check for this overlappin css</p>
              <div class="flex  gap-8 mt-5 ">
                 <p class="text-sm text-gray-700 mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-                <button class="btn btn-primary ">Completed</button>
+                <button id="CompletedBtn2" onclick="showAlerts()" class="btn btn-primary ">Completed</button>
              </div>
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md ">
-              <p class="ml-2">Meta</p>  
+          <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+              <p class="ml-2"> <span class="bg-white rounded-lg">Meta</span></p>  
              <h2 class="font-bold">Add new emoji 🤲</h2>
-              <p class="p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <p class="p-2  bg-white rounded-lg">Debug using Chrome DevTools, check for overlappin</p>
               <div class="flex  gap-8 mt-5 ">
                 <p class="text-sm text-gray-700 mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-                <button class="btn btn-primary ">Completed</button>
+                <button id="CompletedBtn3" onclick="showAlerts()" class="btn btn-primary ">Completed</button>
              </div>
            </div>
-           <div class="bg-white p-4 rounded-lg shadow-md ">
-              <p class="ml-2">Google LLC</p>  
+           <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+              <p class="ml-2"> <span class="bg-white rounded-lg">Google LLC</span></p>  
              <h2 class="font-bold">Integrate OpenAI</h2>
-              <p class="p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <p class="p-2  bg-white rounded-lg">Debug using Chrome DevTools, check for overlappin</p>
               <div class="flex  gap-8 mt-5 ">
                 <p class="text-sm text-gray-700 mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-                <button class="btn btn-primary ">Completed</button>
+                <button id="CompletedBtn4" onclick="showAlerts()" class="btn btn-primary ">Completed</button>
              </div>
            </div>
-           <div class="bg-white p-4 rounded-lg shadow-md ">
-              <p class="ml-2"> Glassdoar</p>  
+           <div class="bg-gray-200 p-4 rounded-lg shadow-md ">
+              <p class="ml-2"> <span class=" bg-white rounded-lg">Glassdoar</span></p>  
              <h2 class="font-bold">Improve Job searching</h2>
-              <p class="p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <p class="p-2  bg-white rounded-lg">Debug using Chrome DevTools, check for overlappin</p>
               <div class="flex  gap-8 mt-5 ">
                 <p class="text-sm text-gray-700 mt-2 ">Deadline:<br><strong>21 March 2025</strong></p>
-                <button class="btn btn-primary ">Completed</button>
+                <button id="CompletedBtn5" onclick="showAlerts()" class="btn btn-primary ">Completed</button>
              </div>
            </div>
        </div>
     </div>
     <!--Activity Log-->
-    <div class="bg-gray-50  rounded-lg   mt-6 col-span-1 justify-items-center  ">
+    <div id="" class="bg-gray-50  rounded-lg   mt-6 col-span-1 justify-items-center  ">
     
-        <div class=" flex justify-center p-5  gap-2">
+        <div id="" class=" flex justify-center p-5  gap-2">
                 <img src="assets/activity.png" alt="">
                 <h2 class="font-bold mb-2 text-2xl ">Activity Log</h2>
         </div>
         <button class="btn btn-primary">Clear History</button>
+        <div id="activitylog">
+
+        </div>
      </div>
      
          
@@ -126,7 +129,11 @@
          
 </div>
  
- 
+ <script src="completed.js"></script>
+ <script src="discover.html"></script>
+ <script src="history.html"></script>
+ <script src="history.js"></script>
+
     
 </body>
 </html>
