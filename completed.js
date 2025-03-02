@@ -13,12 +13,10 @@ document.getElementById("CompletedBtn").addEventListener("click",
              document.getElementById('assigned').innerText =assigned;
              document.getElementById('completed').innerText=completed;
              
-             
+             activitylog.innerText=`You have completed the task: Fix mobile button issue at `
 
-             const activitylog =document.getElementById("activitylog");
-             activitylog.innerText=`You have completed the task: Fix mobile button issue at`
+            
              
-    
              } 
 )
 
@@ -35,6 +33,9 @@ document.getElementById("CompletedBtn1").addEventListener("click",
             }
             document.getElementById('assigned').innerText =assigned;
             document.getElementById('completed').innerText=completed;
+            
+             activitylog.innerText=`You have completed the task: Add Dark Mode issue at  `
+             
     }
 )
 document.getElementById("CompletedBtn2").addEventListener("click",
@@ -50,6 +51,9 @@ document.getElementById("CompletedBtn2").addEventListener("click",
             }
             document.getElementById('assigned').innerText =assigned;
             document.getElementById('completed').innerText=completed;
+
+             const activitylog =document.getElementById("activitylog");
+             activitylog.innerText=`You have completed the task:Optimize  Home page  at`
     }
 )
 document.getElementById("CompletedBtn3").addEventListener("click",
@@ -65,6 +69,13 @@ document.getElementById("CompletedBtn3").addEventListener("click",
             }
             document.getElementById('assigned').innerText =assigned;
             document.getElementById('completed').innerText=completed;
+
+
+
+            const activitylog =document.getElementById("activitylog");
+             activitylog.innerText=`You have completed the task:Add new emoji 🤲  at`
+             
+          
     }
 )
 document.getElementById("CompletedBtn4").addEventListener("click",
@@ -80,6 +91,9 @@ document.getElementById("CompletedBtn4").addEventListener("click",
             }
             document.getElementById('assigned').innerText =assigned;
             document.getElementById('completed').innerText=completed;
+
+            const activitylog =document.getElementById("activitylog");
+             activitylog.innerText=`You have completed the task:Integrate OpenAI API  at`
     }
 )
 document.getElementById("CompletedBtn5").addEventListener("click",
@@ -96,6 +110,11 @@ document.getElementById("CompletedBtn5").addEventListener("click",
             }
             document.getElementById('assigned').innerText =assigned;
             document.getElementById('completed').innerText=completed;
+
+            const activitylog =document.getElementById("activitylog");
+             activitylog.innerText=`You have completed the task:Improve Job searchin  at`
+     
+         
     }
 )
 
@@ -130,4 +149,9 @@ document.getElementById("color").addEventListener("click",
 
     // activity log history add
 
+    document.getElementById("History").addEventListener("click", function() {
+       
+        document.getElementById("activitylog").innerHTML = "";
+    
+    });
     
